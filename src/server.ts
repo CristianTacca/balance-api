@@ -1,13 +1,14 @@
 import app from "./app";
+import Logger from "./logs";
 import { AppDataSource } from "./data-source";
 
 (async () => {
   await AppDataSource.initialize()
     .then(() => {
-      console.log("Data Source initialized");
+      Logger.info("Data Source initialized");
     })
     .catch((err) => {
-      console.log("Error during Data Source initialization", err);
+      Logger.error("Error during Data Source initialization", err);
     });
 
   app.listen(process.env.PORT || 3000);

@@ -1,0 +1,11 @@
+2022-11-08 19:36:09:369 [32minfo[39m: [32mData Source initialized[39m
+2022-11-08 19:36:09:369 [31merror[39m: [31mAppError: [39m
+[31m    at C:\Users\chris\Documents\GitHub\balance-api\src\services\balance.service.ts:18:15[39m
+[31m    at Generator.next (<anonymous>)[39m
+[31m    at fulfilled (C:\Users\chris\Documents\GitHub\balance-api\src\services\balance.service.ts:5:58)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:96:5) {[39m
+[31m  statusCode: 401,[39m
+[31m  response: 'User does not exist.'[39m
+[31m}[39m
+2022-11-08 19:36:51:3651 [32minfo[39m: [32mData Source initialized[39m
+2022-11-08 19:36:51:3651 [32minfo[39m: [32m{ user: { id: 2 }, balance: 320 }[39m

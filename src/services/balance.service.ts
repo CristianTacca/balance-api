@@ -13,8 +13,6 @@ class BalanceService {
 
     if (!balance) {
       const user = await userRepository.findOne({ id: id });
-      console.log(id);
-      console.log(user);
 
       if (!user) {
         throw new AppError(401, "User does not exist.");
